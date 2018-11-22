@@ -36,7 +36,7 @@ def ocr(img, mrz_mode=True, extra_cmdline_params=''):
         pytesseract.run_tesseract(input_file_name,
                                  output_file_name_base,
                                  'txt',
-                                 lang=None,
+                                 lang='OCRB',
                                  config=config)
         
         if sys.version_info.major == 3:
